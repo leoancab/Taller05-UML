@@ -10,8 +10,8 @@ package com.mycompany.taller05.uml;
  */
 public class Profesor extends PersonalAcademico {
 
-    public Profesor(String usuario, String contraseña, String nombre, String apellido) {
-        super(usuario, contraseña, nombre, apellido);
+    public Profesor(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+        super(usuario, contraseña, nombre, apellido, incidentes);
     }
 
     public void cargarActividadSumativa(Curso curso, ActividadSumativa actividadSumativa) {

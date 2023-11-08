@@ -10,19 +10,19 @@ package com.mycompany.taller05.uml;
  */
 public class SoporteTecnico extends Usuario {
 
-    public SoporteTecnico(String usuario, String contraseña, String nombre, String apellido) {
-        super(usuario, contraseña, nombre, apellido);
+    public SoporteTecnico(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+        super(usuario, contraseña, nombre, apellido, incidentes);
     }
-    
-    public void brindarAsistencia(Usuario usuario){
-        
+
+    public void brindarAsistencia(Usuario usuario) {
+
     }
-    
-    public void resolverProblemaTecnico(Usuario usuario){
-        
+
+    public void resolverProblemaTecnico(Usuario usuario) {
+
     }
-    
-    public void derivarProblemaDeGestion(Administrador administrador){
-        
+
+    public void derivarProblemaDeGestion(Administrador administrador) {
+
     }
 }

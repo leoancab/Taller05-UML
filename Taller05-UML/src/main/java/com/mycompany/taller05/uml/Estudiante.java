@@ -10,8 +10,8 @@ package com.mycompany.taller05.uml;
  */
 public class Estudiante extends PersonalAcademico {
 
-    public Estudiante(String usuario, String contraseña, String nombre, String apellido) {
-        super(usuario, contraseña, nombre, apellido);
+    public Estudiante(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+        super(usuario, contraseña, nombre, apellido, incidentes);
     }
 
     public void solicitarInscripcionCurso(Curso curso) {

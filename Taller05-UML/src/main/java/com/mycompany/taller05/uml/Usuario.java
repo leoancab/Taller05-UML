@@ -9,16 +9,19 @@ package com.mycompany.taller05.uml;
  * @author leoan
  */
 public class Usuario {
+
     protected String usuario;
     protected String contraseña;
     protected String nombre;
     protected String apellido;
+    protected Incidente incidentes;
 
-    public Usuario(String usuario, String contraseña, String nombre, String apellido) {
+    public Usuario(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
         this.usuario = usuario;
         this.contraseña = contraseña;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.incidentes = incidentes;
     }
 
     public String getUsuario() {
@@ -52,14 +55,13 @@ public class Usuario {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-    
-    protected boolean logIn(){
-        return false;
+
+    public Incidente getIncidentes() {
+        return incidentes;
     }
-    
-    protected boolean logOut(){
-        return false;
+
+    public void setIncidentes(Incidente incidentes) {
+        this.incidentes = incidentes;
     }
-    
-    
+
 }

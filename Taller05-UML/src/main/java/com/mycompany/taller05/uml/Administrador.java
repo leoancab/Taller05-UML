@@ -10,23 +10,23 @@ package com.mycompany.taller05.uml;
  */
 public class Administrador extends Usuario {
 
-    public Administrador(String usuario, String contraseña, String nombre, String apellido) {
-        super(usuario, contraseña, nombre, apellido);
+    public Administrador(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+        super(usuario, contraseña, nombre, apellido, incidentes);
     }
-    
-    public void crearUsuarioConRol(String usuario, String contraseña){
-        
+
+    public void crearUsuarioConRol(String usuario, String contraseña) {
+
     }
-    
-    public void asignarPermiso(String usuario){
-        
+
+    public void asignarPermiso(String usuario) {
+
     }
-    
-    public void actualizarSoftware(){
-        
+
+    public void actualizarSoftware() {
+
     }
-    
-    public void asignarResponsable(){
-        
+
+    public void asignarResponsable() {
+
     }
 }

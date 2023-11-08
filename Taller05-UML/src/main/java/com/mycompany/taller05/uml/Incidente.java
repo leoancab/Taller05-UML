@@ -21,8 +21,10 @@ public class Incidente {
     protected List log_actualizaciones;
     protected LocalDate fecha_cerrado;
     protected String tipo;
+    private Usuario responsable;
+    protected PersonalAcademico beneficiario;
 
-    public Incidente(int id, LocalDate fecha_reportado, String estado, String titulo, String descripcion, List log_actualizaciones, LocalDate fecha_cerrado, String tipo) {
+    public Incidente(int id, LocalDate fecha_reportado, String estado, String titulo, String descripcion, List log_actualizaciones, LocalDate fecha_cerrado, String tipo, Usuario responsable, PersonalAcademico beneficiario) {
         this.id = id;
         this.fecha_reportado = fecha_reportado;
         this.estado = estado;
@@ -31,6 +33,8 @@ public class Incidente {
         this.log_actualizaciones = log_actualizaciones;
         this.fecha_cerrado = fecha_cerrado;
         this.tipo = tipo;
+        this.responsable = responsable;
+        this.beneficiario = beneficiario;
     }
 
     public int getId() {
@@ -95,6 +99,22 @@ public class Incidente {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public Usuario getResponsable() {
+        return responsable;
+    }
+
+    public void setResponsable(Usuario responsable) {
+        this.responsable = responsable;
+    }
+
+    public PersonalAcademico getBeneficiario() {
+        return beneficiario;
+    }
+
+    public void setBeneficiario(PersonalAcademico beneficiario) {
+        this.beneficiario = beneficiario;
     }
 
 }
