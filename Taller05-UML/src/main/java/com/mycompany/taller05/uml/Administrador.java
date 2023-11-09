@@ -4,13 +4,15 @@
  */
 package com.mycompany.taller05.uml;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author leoan
  */
 public class Administrador extends Usuario {
 
-    public Administrador(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+    public Administrador(String usuario, String contraseña, String nombre, String apellido, ArrayList<Incidente> incidentes) {
         super(usuario, contraseña, nombre, apellido, incidentes);
     }
 

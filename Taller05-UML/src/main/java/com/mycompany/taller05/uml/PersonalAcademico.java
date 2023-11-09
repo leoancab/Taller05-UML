@@ -4,13 +4,15 @@
  */
 package com.mycompany.taller05.uml;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author leoan
  */
 public class PersonalAcademico extends Usuario {
 
-    public PersonalAcademico(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+    public PersonalAcademico(String usuario, String contraseña, String nombre, String apellido, ArrayList<Incidente> incidentes) {
         super(usuario, contraseña, nombre, apellido, incidentes);
     }
 

@@ -4,14 +4,27 @@
  */
 package com.mycompany.taller05.uml;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author leoan
  */
 public class Profesor extends PersonalAcademico {
 
-    public Profesor(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+    private ArrayList<Curso> cursosACargo;
+
+    public Profesor(ArrayList<Curso> cursosACargo, String usuario, String contraseña, String nombre, String apellido, ArrayList<Incidente> incidentes) {
         super(usuario, contraseña, nombre, apellido, incidentes);
+        this.cursosACargo = cursosACargo;
+    }
+
+    public ArrayList<Curso> getCursosACargo() {
+        return cursosACargo;
+    }
+
+    public void setCursosACargo(ArrayList<Curso> cursosACargo) {
+        this.cursosACargo = cursosACargo;
     }
 
     public void cargarActividadSumativa(Curso curso, ActividadSumativa actividadSumativa) {

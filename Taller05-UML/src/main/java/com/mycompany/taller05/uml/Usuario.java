@@ -4,6 +4,8 @@
  */
 package com.mycompany.taller05.uml;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author leoan
@@ -14,9 +16,9 @@ public class Usuario {
     protected String contraseña;
     protected String nombre;
     protected String apellido;
-    protected Incidente incidentes;
+    protected ArrayList<Incidente> incidentes;
 
-    public Usuario(String usuario, String contraseña, String nombre, String apellido, Incidente incidentes) {
+    public Usuario(String usuario, String contraseña, String nombre, String apellido, ArrayList<Incidente> incidentes) {
         this.usuario = usuario;
         this.contraseña = contraseña;
         this.nombre = nombre;
@@ -56,11 +58,11 @@ public class Usuario {
         this.apellido = apellido;
     }
 
-    public Incidente getIncidentes() {
+    public ArrayList<Incidente> getIncidentes() {
         return incidentes;
     }
 
-    public void setIncidentes(Incidente incidentes) {
+    public void setIncidentes(ArrayList<Incidente> incidentes) {
         this.incidentes = incidentes;
     }
 
